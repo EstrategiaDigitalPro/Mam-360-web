@@ -1,0 +1,6 @@
+{
+  "name": "Mamá 360 – Mini Aplicación",
+  "description": "Landing page comercial oficial de Mamá 360 – Mini Aplicación. Todo tu mundo en un solo lugar. Organiza tu hogar, familia y trabajo por solo US$9.97.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
