@@ -99,7 +99,7 @@ export const IncomeOpportunitySection: React.FC<IncomeOpportunitySectionProps> =
               
               <div className="relative rounded-3xl overflow-hidden aspect-[4/3] border-3 border-white/30 shadow-2xl">
                 <img
-                  src="/src/assets/images/entrepreneur_latina_mom_1794353625695.jpg"
+                  src="/assets/images/entrepreneur_latina_mom_1794353625695.jpg"
                   alt="Madre emprendedora latina trabajando feliz desde su laptop y celular en casa"
                   className="w-full h-full object-cover"
                   loading="lazy"

@@ -70,7 +70,7 @@ export const SelfCareSection: React.FC = () => {
 
               <div className="relative rounded-3xl overflow-hidden aspect-[4/3] border-3 border-amber-200 shadow-2xl">
                 <img
-                  src="/src/assets/images/mom_relaxing_coffee_1794354773321.jpg"
+                  src="/assets/images/mom_relaxing_coffee_1794354773321.jpg"
                   alt="Mamá latina sonriente y relajada disfrutando de una taza de café caliente junto a la ventana"
                   className="w-full h-full object-cover"
                   loading="lazy"

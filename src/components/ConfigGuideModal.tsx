@@ -182,7 +182,7 @@ export const ConfigGuideModal: React.FC<ConfigGuideModalProps> = ({
                   <span>4.</span> Sustituir fotografías y portadas
                 </h5>
                 <p className="text-xs text-[#68677F]">
-                  Las imágenes de alta fidelidad están alojadas en <code className="bg-white px-1.5 py-0.5 rounded text-[#6554C9] font-mono">/src/assets/images/</code>. Puedes colocar tus propias fotos reemplazando los archivos o actualizando las rutas en los componentes.
+                  Las imágenes y fotos están alojadas en <code className="bg-white px-1.5 py-0.5 rounded text-[#6554C9] font-mono">/public/assets/images/</code> y <code className="bg-white px-1.5 py-0.5 rounded text-[#6554C9] font-mono">/public/assets/aistudio/</code>. Se sirven públicamente y se incluyen automáticamente en la carpeta de producción <code className="bg-white px-1.5 py-0.5 rounded text-[#6554C9] font-mono">dist/</code>.
                 </p>
               </div>
 

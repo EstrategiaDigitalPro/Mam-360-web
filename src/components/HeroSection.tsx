@@ -176,7 +176,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCheckout }) => {
                 {/* Mom and kids joyful photo */}
                 <div className="relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-[16/12]">
                   <img
-                    src="/src/assets/images/hero_latina_mom_1794353621447.jpg"
+                    src="/assets/images/hero_latina_mom_1794353621447.jpg"
                     alt="Mamá latina alegre con sus hijos compartiendo en casa con Mamá 360"
                     className="w-full h-full object-cover"
                     loading="eager"

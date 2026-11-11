@@ -80,7 +80,7 @@ export const ProblemSection: React.FC = () => {
               
               <div className="relative rounded-3xl overflow-hidden aspect-[4/3] border-3 border-rose-200 shadow-xl">
                 <img
-                  src="/src/assets/images/mom_stressed_papers_1794354773530.jpg"
+                  src="/assets/images/mom_stressed_papers_1794354773530.jpg"
                   alt="Mamá latina abrumada con papeles del colegio y pendientes en la mesa"
                   className="w-full h-full object-cover"
                   loading="lazy"

@@ -16,7 +16,7 @@ export const KitchenSection: React.FC = () => {
 
               <div className="relative rounded-3xl overflow-hidden aspect-[4/3] border-3 border-emerald-200 shadow-2xl">
                 <img
-                  src="/src/assets/images/mom_daughter_cooking_1794354773542.jpg"
+                  src="/assets/images/mom_daughter_cooking_1794354773542.jpg"
                   alt="Mamá latina y su hija pequeña riendo y cocinando juntas en una cocina moderna"
                   className="w-full h-full object-cover"
                   loading="lazy"

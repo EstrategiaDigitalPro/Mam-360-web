@@ -16,7 +16,7 @@ export const EnjoyMoreSection: React.FC = () => {
 
               <div className="relative rounded-3xl overflow-hidden aspect-[16/10] sm:aspect-[16/9] border-3 border-purple-200 shadow-2xl">
                 <img
-                  src="/src/assets/images/mom_gaming_kids_1794353624771.jpg"
+                  src="/assets/images/mom_gaming_kids_1794353624771.jpg"
                   alt="Mamá latina riendo y jugando videojuegos con sus dos hijos en el suelo de la sala"
                   className="w-full h-full object-cover"
                   loading="lazy"

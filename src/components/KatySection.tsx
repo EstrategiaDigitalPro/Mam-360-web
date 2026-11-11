@@ -65,7 +65,7 @@ export const KatySection: React.FC = () => {
                 {/* 3D Character Image */}
                 <div className="relative rounded-3xl overflow-hidden aspect-square border-4 border-white shadow-2xl bg-gradient-to-b from-[#E7E3FF] to-pink-100">
                   <img
-                    src="/src/assets/images/katy_assistant_3d_1794353623554.jpg"
+                    src="/assets/images/katy_assistant_3d_1794353623554.jpg"
                     alt="Katy asistente virtual en 3D para Mamá 360 con vestuario lavanda"
                     className="w-full h-full object-cover"
                     loading="lazy"

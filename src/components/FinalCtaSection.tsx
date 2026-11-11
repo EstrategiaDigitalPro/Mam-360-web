@@ -20,7 +20,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenCheckout
           
           <div className="relative rounded-3xl overflow-hidden aspect-[16/10] border-4 border-white shadow-2xl">
             <img
-              src="/src/assets/images/hero_latina_mom_1794353621447.jpg"
+              src="/assets/images/hero_latina_mom_1794353621447.jpg"
               alt="Mamá latina sonriente abrazando a sus dos hijos con ternura y tranquilidad"
               className="w-full h-full object-cover"
               loading="lazy"
