@@ -281,7 +281,7 @@ export const FAQ_ITEMS = [
   {
     id: "faq-4",
     question: "¿Tengo que pagar una mensualidad?",
-    answer: "No. El acceso a Mamá 360 es un pago único de solo US$9.97. No existen mensualidades, cobros recurrentes ni suscripciones ocultas por el acceso adquirido."
+    answer: "No. El acceso a Mamá 360 tiene un precio de lanzamiento con pago único de solo US$9.97. No existen mensualidades, cobros recurrentes ni suscripciones ocultas por el acceso adquirido."
   },
   {
     id: "faq-5",
@@ -315,16 +315,6 @@ export const FAQ_ITEMS = [
   },
   {
     id: "faq-11",
-    question: "¿Cómo puedo comercializar Mamá 360?",
-    answer: "Al adquirir Mamá 360 recibes el derecho de solicitar tu afiliación al producto en la plataforma de Hotmart. Una vez aprobada tu afiliación, obtendrás tu enlace personal para recomendarlo a otras mamás y emprendedoras."
-  },
-  {
-    id: "faq-12",
-    question: "¿Cómo funciona la comisión del 50%?",
-    answer: "Por cada venta realizada a través de tu enlace de afiliada en Hotmart y debidamente atribuida según las reglas de la plataforma, recibirás el 50% del valor neto de la comisión directamente en tu cuenta de Hotmart, conforme a las políticas de liquidación del programa."
-  },
-  {
-    id: "faq-13",
     question: "¿Qué sucede si no estoy satisfecha con la compra?",
     answer: "Cuentas con una garantía incondicional de 7 días. Si dentro de ese periodo consideras que Mamá 360 no cumple con tus expectativas, puedes solicitar el reembolso del 100% de tu dinero directamente a través del sistema de garantías de Hotmart, sin complicaciones."
   }
@@ -341,8 +331,6 @@ export const LEGAL_TEXTS = {
     <p>La compra de Mamá 360 otorga una licencia de uso personal, no transferible e individual. Queda prohibida la reproducción, piratería o distribución no autorizada de los códigos fuente, diseños y manuales.</p>
     <h4>3. Almacenamiento Local de Datos</h4>
     <p>La versión actual de la mini aplicación almacena los datos introducidos por la usuaria de manera local en la memoria y almacenamiento de su propio navegador web (LocalStorage / IndexedDB). La usuaria es responsable de mantener copias de seguridad de sus datos y de evitar el borrado masivo de caché si desea conservarlos.</p>
-    <h4>4. Programa de Afiliados</h4>
-    <p>El derecho a comercializar Mamá 360 como afiliada se rige estrictamente por los términos, requisitos y políticas operativas de la plataforma Hotmart. La comisión del 50% aplica sobre las ventas válidamente atribuidas.</p>
   `,
   privacy: `
     <h3>Política de Privacidad</h3>

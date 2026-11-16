@@ -1,16 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { LANDING_CONFIG } from '../config/landingConfig';
 import { 
   CheckCircle2, 
-  ShieldCheck, 
   Sparkles, 
   Lock, 
-  Smartphone, 
-  Gift, 
-  ArrowRight, 
-  Globe,
-  Coins,
-  Star
+  ArrowRight
 } from 'lucide-react';
 
 interface OfferSectionProps {
@@ -18,17 +12,6 @@ interface OfferSectionProps {
 }
 
 export const OfferSection: React.FC<OfferSectionProps> = ({ onOpenCheckout }) => {
-  const [selectedCurrency, setSelectedCurrency] = useState<'USD' | 'MXN' | 'COP' | 'ARS' | 'CLP' | 'PEN'>('USD');
-
-  // Approximate reference currency guides (indicative)
-  const currencyEquivalents = {
-    USD: { symbol: "US$", amount: "9.97", note: "Dólares Americanos" },
-    MXN: { symbol: "MX$", amount: "198", note: "Pesos Mexicanos aprox." },
-    COP: { symbol: "COL$", amount: "42.000", note: "Pesos Colombianos aprox." },
-    ARS: { symbol: "AR$", amount: "11.500", note: "Pesos Argentinos aprox." },
-    CLP: { symbol: "CLP$", amount: "9.800", note: "Pesos Chilenos aprox." },
-    PEN: { symbol: "S/.", amount: "38", note: "Soles Peruanos aprox." }
-  };
 
   const offerItems = [
     {
@@ -72,13 +55,6 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onOpenCheckout }) =>
       badge: "Actualizaciones",
       badgeColor: "bg-teal-100 text-teal-800 border-teal-200",
       iconColor: "text-teal-600"
-    },
-    {
-      title: "Derecho a comercialización (Comisión del 50%)",
-      desc: "Participación en el programa oficial de afiliadas de Hotmart bajo sus condiciones.",
-      badge: "Comisión 50%",
-      badgeColor: "bg-amber-100 text-amber-900 border-amber-300 font-black",
-      iconColor: "text-amber-600"
     }
   ];
 
@@ -90,7 +66,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onOpenCheckout }) =>
         <div className="max-w-3xl mx-auto text-center mb-12">
           <div className="inline-flex items-center gap-2 text-xs font-black text-rose-700 bg-rose-100 border border-rose-200 px-4 py-1.5 rounded-full mb-3 shadow-2xs">
             <Sparkles className="w-3.5 h-3.5 text-rose-500" />
-            <span>Inversión Única con Valor Total</span>
+            <span>Precio de Lanzamiento · Inversión Única</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#28234B] tracking-tight leading-tight mb-4 text-balance">
             Todo tu mundo organizado por <br />
@@ -99,7 +75,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onOpenCheckout }) =>
             </span>
           </h2>
           <p className="text-base sm:text-lg text-[#68677F] font-medium leading-relaxed">
-            Sin mensualidades ni costos ocultos. Obtienes la mini aplicación completa, los dos eBooks y la posibilidad de ganar comisiones.
+            Sin mensualidades ni costos ocultos. Obtienes la mini aplicación completa y los dos eBooks de regalo familiar.
           </p>
         </div>
 
@@ -155,7 +131,7 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onOpenCheckout }) =>
               ))}
             </div>
 
-            {/* Price & Currency Zone with warm golden radiant styling */}
+            {/* Price Zone with warm golden radiant styling */}
             <div className="bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 border-2 border-amber-300 rounded-3xl p-6 sm:p-8 text-center mb-8 shadow-xs">
               
               <span className="text-xs uppercase font-black tracking-wider text-amber-800 block mb-1">
@@ -164,37 +140,17 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onOpenCheckout }) =>
 
               <div className="flex items-center justify-center gap-2 mb-2">
                 <span className="text-5xl sm:text-6xl font-black font-display text-[#342B72] tracking-tight drop-shadow-sm">
-                  {currencyEquivalents[selectedCurrency].symbol}{currencyEquivalents[selectedCurrency].amount}
+                  {LANDING_CONFIG.PRICE_TEXT}
                 </span>
               </div>
 
               <div className="inline-block bg-amber-200 text-amber-950 text-xs font-black px-4 py-1 rounded-full mb-3 shadow-2xs">
-                {LANDING_CONFIG.PAYMENT_TYPE} · {LANDING_CONFIG.ACCESS_TYPE}
+                Precio de lanzamiento · {LANDING_CONFIG.PAYMENT_TYPE} · {LANDING_CONFIG.ACCESS_TYPE}
               </div>
 
-              <p className="text-xs text-[#68677F] max-w-md mx-auto mb-4 font-semibold">
-                O su equivalente en tu moneda local procesado automáticamente por Hotmart en tu país.
+              <p className="text-xs text-[#68677F] max-w-md mx-auto font-semibold">
+                Valor especial de lanzamiento. Hotmart realiza el cobro seguro y la conversión automática en el momento del pago.
               </p>
-
-              {/* Currency Selector buttons */}
-              <div className="flex items-center justify-center gap-1.5 flex-wrap">
-                <span className="text-[11px] text-[#68677F] font-bold mr-1 flex items-center gap-1">
-                  <Globe className="w-3.5 h-3.5 text-[#6554C9]" /> Ver en:
-                </span>
-                {(['USD', 'MXN', 'COP', 'ARS', 'CLP', 'PEN'] as const).map((curr) => (
-                  <button
-                    key={curr}
-                    onClick={() => setSelectedCurrency(curr)}
-                    className={`text-xs px-3 py-1 rounded-xl font-bold transition-all cursor-pointer ${
-                      selectedCurrency === curr
-                        ? 'bg-[#6554C9] text-white shadow-xs scale-105'
-                        : 'bg-white text-[#28234B] border border-amber-200 hover:bg-amber-100/50'
-                    }`}
-                  >
-                    {curr}
-                  </button>
-                ))}
-              </div>
 
             </div>
 

@@ -15,7 +15,6 @@ import { EnjoyMoreSection } from './components/EnjoyMoreSection';
 import { KitchenSection } from './components/KitchenSection';
 import { BonusesSection } from './components/BonusesSection';
 import { StepsSection } from './components/StepsSection';
-import { IncomeOpportunitySection } from './components/IncomeOpportunitySection';
 import { OfferSection } from './components/OfferSection';
 import { GuaranteeSection } from './components/GuaranteeSection';
 import { FaqSection } from './components/FaqSection';
@@ -52,7 +51,6 @@ export default function App() {
       {/* Top Navigation */}
       <Header
         onOpenCheckout={handleOpenCheckout}
-        onOpenConfigGuide={() => setIsConfigOpen(true)}
       />
 
       <main className="flex-grow">
@@ -83,10 +81,7 @@ export default function App() {
         {/* SECCIÓN PASOS: COMIENZA EN TRES SENCILLOS PASOS */}
         <StepsSection />
 
-        {/* SECCIÓN 9: OPORTUNIDAD DE AFILIADAS 50% COMISIÓN */}
-        <IncomeOpportunitySection onOpenCheckout={handleOpenCheckout} />
-
-        {/* SECCIÓN 10: TODO TU MUNDO POR UN SOLO PAGO (Oferta comercial completa) */}
+        {/* SECCIÓN 9: TODO TU MUNDO POR UN SOLO PAGO (Oferta comercial completa) */}
         <OfferSection onOpenCheckout={handleOpenCheckout} />
 
         {/* SECCIÓN 11: GARANTÍA 7 DÍAS */}

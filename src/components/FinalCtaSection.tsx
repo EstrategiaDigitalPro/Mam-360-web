@@ -75,8 +75,8 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenCheckout
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1.5 transition-transform" />
           </button>
           
-          <div className="mt-3.5 flex items-center justify-center gap-3 text-xs text-[#68677F] font-bold">
-            <span className="text-amber-800 bg-amber-100 px-2.5 py-0.5 rounded-full">{LANDING_CONFIG.PRICE_TEXT} Pago único</span>
+          <div className="mt-3.5 flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs text-[#68677F] font-bold">
+            <span className="text-amber-800 bg-amber-100 px-2.5 py-0.5 rounded-full">{LANDING_CONFIG.PRICE_TEXT} · Precio de lanzamiento (pago único)</span>
             <span>·</span>
             <span className="text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">Garantía de {LANDING_CONFIG.GUARANTEE_DAYS} días</span>
             <span>·</span>

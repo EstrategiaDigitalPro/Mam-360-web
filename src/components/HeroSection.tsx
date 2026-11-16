@@ -107,14 +107,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenCheckout }) => {
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/20 pb-5 mb-5 relative">
                 <div>
                   <span className="text-xs uppercase font-black tracking-widest text-amber-300 flex items-center gap-1.5">
-                    <span>✨</span> OFERTA ESPECIAL DE LANZAMIENTO
+                    <span>✨</span> PRECIO ESPECIAL DE LANZAMIENTO
                   </span>
-                  <div className="flex items-baseline gap-2 mt-1">
+                  <div className="flex flex-wrap items-baseline gap-2 mt-1">
                     <span className="text-5xl sm:text-6xl font-black font-display tracking-tight text-white drop-shadow-md">
                       {LANDING_CONFIG.PRICE_TEXT}
                     </span>
                     <span className="text-xs font-extrabold text-amber-900 bg-amber-300 px-3 py-1 rounded-full shadow-xs">
-                      {LANDING_CONFIG.PAYMENT_TYPE}
+                      Precio de lanzamiento · {LANDING_CONFIG.PAYMENT_TYPE}
                     </span>
                   </div>
                 </div>

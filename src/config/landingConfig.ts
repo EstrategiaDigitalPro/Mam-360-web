@@ -13,7 +13,7 @@ export const LANDING_CONFIG = {
   TERMS_URL: "#terminos",
   PRIVACY_URL: "#privacidad",
   REFUND_URL: "#garantia-legal",
-  SUPPORT_EMAIL: "soporte@estrategiadigitalpro.com",
+  SUPPORT_EMAIL: "corcomunicaciones@gmail.com",
 
   // Datos comerciales del producto
   PRODUCT_NAME: "Mamá 360 – Mini Aplicación",

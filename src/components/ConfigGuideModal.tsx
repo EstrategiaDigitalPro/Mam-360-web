@@ -221,8 +221,7 @@ export const ConfigGuideModal: React.FC<ConfigGuideModalProps> = ({
   BRAND_OWNER: "Estrategia Digital Pro",
   SLOGAN: "Todo tu mundo en un solo lugar",
   PRICE_USD: 9.97,
-  PRICE_TEXT: "US$9.97",
-  AFFILIATE_COMMISSION: "50%"
+  PRICE_TEXT: "US$9.97"
 };`}
               </pre>
             </div>

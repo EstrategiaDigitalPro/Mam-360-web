@@ -81,7 +81,7 @@ export const FooterSection: React.FC<FooterSectionProps> = ({ onOpenLegal, onOpe
                 <span>Transacciones por Hotmart</span>
               </div>
               <p className="text-[11px] leading-tight">
-                Pago único de {LANDING_CONFIG.PRICE_TEXT} con protección al consumidor y liquidación de afiliadas oficial.
+                Precio de lanzamiento (pago único de {LANDING_CONFIG.PRICE_TEXT}) con protección al consumidor y garantía oficial de 7 días.
               </p>
             </div>
 

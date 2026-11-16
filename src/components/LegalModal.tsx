@@ -39,7 +39,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ activeDoc, onClose }) =>
           icon: <Mail className="w-5 h-5 text-[#6554C9]" />,
           content: `
             <h3>Canal Oficial de Atención a Clientas</h3>
-            <p>Si tienes alguna consulta sobre tu acceso, requieres asistencia para utilizar la mini aplicación o deseas información sobre el programa de afiliadas, nuestro equipo de soporte está para ayudarte.</p>
+            <p>Si tienes alguna consulta sobre tu acceso o requieres asistencia para utilizar la mini aplicación, nuestro equipo de soporte está para ayudarte.</p>
             <div style="background: #F1EFFF; padding: 16px; border-radius: 12px; margin: 16px 0; border: 1px solid #E7E3FF;">
               <p><strong>Correo electrónico de soporte:</strong></p>
               <p style="font-size: 16px; font-weight: bold; color: #342B72;">${LANDING_CONFIG.SUPPORT_EMAIL}</p>
